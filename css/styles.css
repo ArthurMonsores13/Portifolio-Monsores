@@ -36,7 +36,7 @@ header nav {
 header h1 {
   font-size: 2rem;
   font-weight: 700;
-  color: #b983ff;
+  color: #0000ff;
   letter-spacing: 1px;
 }
 
@@ -55,7 +55,7 @@ header ul li a {
 }
 
 header ul li a:hover {
-  color: #b983ff;
+  color: #0000ff;
   transform: scale(1.05);
 }
 
@@ -69,7 +69,7 @@ header ul li a:hover {
   text-align: center;
   margin-bottom: 2.5rem;
   font-weight: 700;
-  color: #b983ff;
+  color: #0000ff;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -98,7 +98,7 @@ header ul li a:hover {
   width: 300px;
   height: 300px;
   border-radius: 50%;
-  border: 5px solid #8e44ad;
+  border: 5px solid #0000ff;
   background: #1a1a2e;
   padding: 5px;
   object-fit: cover;
@@ -145,7 +145,7 @@ header ul li a:hover {
 
 .projeto-card h3 {
   font-size: 1.6rem;
-  color: #b983ff;
+  color: #0000ff;
   margin-bottom: 1rem;
 }
 
