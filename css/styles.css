@@ -19,9 +19,8 @@ header {
   background-color: #1a1a2e;
   padding: 1.5rem 0;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+  position: static;
+  width:auto;
 }
 
 header nav {
