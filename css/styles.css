@@ -1,13 +1,15 @@
+/* Reset e configurações base mantendo seu estilo */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif !important;
+  scroll-behavior: smooth;
 }
 
 body {
-  background-color: #0e0e1a;
-  color: #ffffff;
+  background-color: #0e0e1a !important;
+  color: #ffffff !important;
   line-height: 1.6;
   font-size: 16px;
   min-height: 100vh;
@@ -15,88 +17,68 @@ body {
   flex-direction: column;
 }
 
-header {
-  background-color: #1a1a2e;
+.custom-header {
+  background-color: #1a1a2e !important;
   padding: 1.5rem 0;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  position: static;
-  width:auto;
 }
 
-header nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1.5rem;
-}
-
-header h1 {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #0000ff;
+.custom-brand {
+  font-size: 2rem !important;
+  font-weight: 700 !important;
+  color: #0000ff !important;
   letter-spacing: 1px;
+  text-decoration: none !important;
 }
 
-header ul {
-  list-style: none;
-  display: flex;
-  gap: 2rem;
+.custom-brand:hover {
+  color: #0000ff !important;
 }
 
-header ul li a {
-  color: #ffffff;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 1.1rem;
-  transition: color 0.3s ease, transform 0.3s ease;
+.custom-nav-link {
+  color: #ffffff !important;
+  text-decoration: none !important;
+  font-weight: 600 !important;
+  font-size: 1.1rem !important;
+  transition: color 0.3s ease, transform 0.3s ease !important;
+  padding: 0.5rem 1rem !important;
 }
 
-header ul li a:hover {
-  color: #0000ff;
+.custom-nav-link:hover {
+  color: #0000ff !important;
   transform: scale(1.05);
 }
 
-.section {
+/* Seções mantendo seu gradiente */
+.custom-section {
   padding: 4rem 1.5rem;
-  background: linear-gradient(135deg, #0e0e1a, #1a1a2e);
+  background: linear-gradient(135deg, #0e0e1a, #1a1a2e) !important;
 }
 
-.section h2 {
-  font-size: 2.5rem;
+.custom-title {
+  font-size: 2.5rem !important;
   text-align: center;
   margin-bottom: 2.5rem;
-  font-weight: 700;
-  color: #0000ff;
+  font-weight: 700 !important;
+  color: #0000ff !important;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-#sobre {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#sobre p {
+.custom-description {
   max-width: 700px;
   margin: 0 auto 2rem;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.2rem !important;
   line-height: 1.8;
-  color: #cccccc;
+  color: #cccccc !important;
 }
 
-.foto {
+/* Foto mantendo exatamente seu estilo */
+.custom-foto {
   width: 300px;
   height: 300px;
-  border-radius: 50%;
+  border-radius: 50% !important;
   border: 5px solid #0000ff;
   background: #1a1a2e;
   padding: 5px;
@@ -105,9 +87,10 @@ header ul li a:hover {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   animation: fadeIn 1s ease-in;
+  margin: 0 auto;
 }
 
-.foto:hover {
+.custom-foto:hover {
   transform: scale(1.05);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
@@ -123,147 +106,218 @@ header ul li a:hover {
   }
 }
 
-.projetos-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-}
-
-.projeto-card {
-  background-color: #1f1f3d;
+/* Cards de projeto mantendo seu estilo */
+.custom-projeto-card {
+  background-color: #1f1f3d !important;
   padding: 2rem;
-  border-radius: 12px;
+  border-radius: 12px !important;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none !important;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
-.projeto-card:hover {
+.custom-projeto-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
 }
 
-.projeto-card h3 {
-  font-size: 1.6rem;
-  color: #0000ff;
+.custom-card-title {
+  font-size: 1.6rem !important;
+  color: #0000ff !important;
   margin-bottom: 1rem;
 }
 
-.projeto-card p {
-  color: #cccccc;
+.custom-card-text {
+  color: #cccccc !important;
   margin-bottom: 1.2rem;
-  font-size: 1rem;
+  font-size: 1rem !important;
+  flex-grow: 1;
 }
 
-.projeto-card a {
-  color: #b983ff;
-  font-weight: 600;
-  text-decoration: none;
+.custom-link {
+  color: #b983ff !important;
+  font-weight: 600 !important;
+  text-decoration: none !important;
   transition: color 0.3s ease;
 }
 
-.projeto-card a:hover {
-  color: #ffffff;
-  text-decoration: underline;
+.custom-link:hover {
+  color: #ffffff !important;
+  text-decoration: underline !important;
 }
 
-#contato h3 {
-  font-size: 1.4rem;
+/* Subtítulo */
+.custom-subtitle {
+  font-size: 1.4rem !important;
   text-align: center;
   margin-bottom: 1.5rem;
-  color: #cccccc;
+  color: #cccccc !important;
 }
 
-.redes-sociais {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  align-items: center;
+/* Redes sociais mantendo seu estilo */
+.custom-redes-sociais {
   margin-top: 1.5rem;
 }
 
-.redes-sociais a {
-  transition: transform 0.3s ease;
-}
-
-.redes-sociais img {
-  width: 40px;
-  height: 40px;
+.custom-social-link {
+  color: #ffffff !important;
+  text-decoration: none !important;
+  transition: transform 0.3s ease, color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
-  object-fit: cover;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
 }
 
-.redes-sociais a:hover img {
+.custom-social-link:hover {
   transform: scale(1.15);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  color: #0000ff !important;
+  background: rgba(0, 0, 255, 0.1);
 }
 
-footer {
-  background-color: #1a1a2e;
-  color: #ffffff;
-  text-align: center;
+/* Badges customizados */
+.custom-badge {
+  background-color: #0000ff !important;
+  color: #ffffff !important;
+  font-size: 0.9rem !important;
+  padding: 0.5rem 1rem !important;
+  border-radius: 20px !important;
+  font-weight: 600 !important;
+  transition: all 0.3s ease;
+}
+
+.custom-badge:hover {
+  transform: scale(1.05);
+  background-color: #b983ff !important;
+}
+
+/* Formulário customizado */
+.custom-input {
+  background-color: #1f1f3d !important;
+  border: 2px solid #0000ff !important;
+  color: #ffffff !important;
+  border-radius: 8px !important;
+  padding: 0.75rem 1rem !important;
+}
+
+.custom-input:focus {
+  background-color: #1f1f3d !important;
+  border-color: #b983ff !important;
+  color: #ffffff !important;
+  box-shadow: 0 0 0 0.2rem rgba(185, 131, 255, 0.25) !important;
+}
+
+.custom-input::placeholder {
+  color: #cccccc !important;
+}
+
+.custom-btn {
+  background-color: #0000ff !important;
+  border: none !important;
+  color: #ffffff !important;
+  padding: 0.75rem 2rem !important;
+  border-radius: 8px !important;
+  font-weight: 600 !important;
+  transition: all 0.3s ease;
+}
+
+.custom-btn:hover {
+  background-color: #b983ff !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(185, 131, 255, 0.3);
+}
+
+/* Footer */
+.custom-footer {
+  background-color: #1a1a2e !important;
+  color: #ffffff !important;
   padding: 1.5rem 0;
   box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
   margin-top: auto;
 }
 
-footer p {
-  font-size: 0.9rem;
+.custom-footer p {
+  font-size: 0.9rem !important;
+  margin: 0 !important;
 }
 
+/* Responsividade mantendo seu design */
 @media (max-width: 768px) {
-  .foto {
+  .custom-foto {
     width: 200px;
     height: 200px;
     border-width: 3px;
   }
 
-  .section h2 {
-    font-size: 2rem;
+  .custom-title {
+    font-size: 2rem !important;
   }
 
-  .projeto-card {
+  .custom-projeto-card {
     padding: 1.5rem;
+  }
+
+  .custom-social-link {
+    width: 50px;
+    height: 50px;
   }
 }
 
 @media (max-width: 500px) {
-  header nav {
-    flex-direction: column;
-    gap: 1rem;
+  .custom-brand {
+    font-size: 1.5rem !important;
   }
 
-  header ul {
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-  }
-
-  header h1 {
-    font-size: 1.5rem;
-  }
-
-  .section {
+  .custom-section {
     padding: 2rem 1rem;
   }
 
-  .section h2 {
-    font-size: 1.8rem;
+  .custom-title {
+    font-size: 1.8rem !important;
   }
 
-  .foto {
+  .custom-foto {
     width: 150px;
     height: 150px;
     border-width: 2px;
   }
 
-  .projeto-card h3 {
-    font-size: 1.4rem;
+  .custom-card-title {
+    font-size: 1.4rem !important;
   }
 
-  .redes-sociais {
-    flex-direction: column;
-    gap: 15px;
+  .custom-redes-sociais {
+    flex-direction: column !important;
+    gap: 15px !important;
   }
+
+  .custom-social-link {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+/* Ajustes para seções com scroll suave */
+section {
+  scroll-margin-top: 80px;
+}
+
+/* Sobrescrever estilos do Bootstrap que podem interferir */
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+
+.navbar-toggler {
+  border: 1px solid #0000ff !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%230000ff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
 }
