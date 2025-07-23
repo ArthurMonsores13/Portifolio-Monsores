@@ -1,15 +1,14 @@
-/* Reset e configurações base mantendo seu estilo */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif !important;
+  font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
 }
 
 body {
-  background-color: #0e0e1a !important;
-  color: #ffffff !important;
+  background-color: #0e0e1a;
+  color: #fff;
   line-height: 1.6;
   font-size: 16px;
   min-height: 100vh;
@@ -17,77 +16,105 @@ body {
   flex-direction: column;
 }
 
+a {
+  text-decoration: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-toggler {
+  border: 1px solid #0000ff;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%230000ff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Header */
 .custom-header {
-  background-color: #1a1a2e !important;
+  background-color: #1a1a2e;
   padding: 1.5rem 0;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .custom-brand {
-  font-size: 2rem !important;
-  font-weight: 700 !important;
-  color: #0000ff !important;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0000ff;
   letter-spacing: 1px;
-  text-decoration: none !important;
 }
 
 .custom-brand:hover {
-  color: #0000ff !important;
+  color: #0000ff;
 }
 
 .custom-nav-link {
-  color: #ffffff !important;
-  text-decoration: none !important;
-  font-weight: 600 !important;
-  font-size: 1.1rem !important;
-  transition: color 0.3s ease, transform 0.3s ease !important;
-  padding: 0.5rem 1rem !important;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .custom-nav-link:hover {
-  color: #0000ff !important;
+  color: #0000ff;
   transform: scale(1.05);
 }
 
-/* Seções mantendo seu gradiente */
+/* Seções */
 .custom-section {
   padding: 4rem 1.5rem;
-  background: linear-gradient(135deg, #0e0e1a, #1a1a2e) !important;
+  background: linear-gradient(135deg, #0e0e1a, #1a1a2e);
 }
 
+section {
+  scroll-margin-top: 80px;
+}
+
+/* Títulos */
 .custom-title {
-  font-size: 2.5rem !important;
+  font-size: 2.5rem;
   text-align: center;
   margin-bottom: 2.5rem;
-  font-weight: 700 !important;
-  color: #0000ff !important;
+  font-weight: 700;
+  color: #0000ff;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
+.custom-subtitle {
+  font-size: 1.4rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #ccc;
+}
+
+/* Texto */
 .custom-description {
   max-width: 700px;
   margin: 0 auto 2rem;
   text-align: center;
-  font-size: 1.2rem !important;
+  font-size: 1.2rem;
   line-height: 1.8;
-  color: #cccccc !important;
+  color: #ccc;
 }
 
-/* Foto mantendo exatamente seu estilo */
+/* Foto */
 .custom-foto {
   width: 300px;
   height: 300px;
-  border-radius: 50% !important;
+  border-radius: 50%;
   border: 5px solid #0000ff;
   background: #1a1a2e;
   padding: 5px;
   object-fit: cover;
   display: block;
+  margin: 0 auto;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   animation: fadeIn 1s ease-in;
-  margin: 0 auto;
 }
 
 .custom-foto:hover {
@@ -106,14 +133,13 @@ body {
   }
 }
 
-/* Cards de projeto mantendo seu estilo */
+/* Card de projeto */
 .custom-projeto-card {
-  background-color: #1f1f3d !important;
+  background-color: #1f1f3d;
   padding: 2rem;
-  border-radius: 12px !important;
+  border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: none !important;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -125,46 +151,52 @@ body {
 }
 
 .custom-card-title {
-  font-size: 1.6rem !important;
-  color: #0000ff !important;
+  font-size: 1.6rem;
+  color: #0000ff;
   margin-bottom: 1rem;
 }
 
 .custom-card-text {
-  color: #cccccc !important;
+  color: #ccc;
   margin-bottom: 1.2rem;
-  font-size: 1rem !important;
+  font-size: 1rem;
   flex-grow: 1;
 }
 
 .custom-link {
-  color: #b983ff !important;
-  font-weight: 600 !important;
-  text-decoration: none !important;
+  color: #b983ff;
+  font-weight: 600;
   transition: color 0.3s ease;
 }
 
 .custom-link:hover {
-  color: #ffffff !important;
-  text-decoration: underline !important;
+  color: #fff;
+  text-decoration: underline;
 }
 
-/* Subtítulo */
-.custom-subtitle {
-  font-size: 1.4rem !important;
-  text-align: center;
-  margin-bottom: 1.5rem;
-  color: #cccccc !important;
+/* Badges */
+.custom-badge {
+  background-color: #0000ff;
+  color: #fff;
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+  transition: all 0.3s ease;
 }
 
-/* Redes sociais mantendo seu estilo */
+.custom-badge:hover {
+  transform: scale(1.05);
+  background-color: #b983ff;
+}
+
+/* Redes sociais */
 .custom-redes-sociais {
   margin-top: 1.5rem;
 }
 
 .custom-social-link {
-  color: #ffffff !important;
-  text-decoration: none !important;
+  color: #fff;
   transition: transform 0.3s ease, color 0.3s ease;
   display: inline-flex;
   align-items: center;
@@ -178,77 +210,61 @@ body {
 
 .custom-social-link:hover {
   transform: scale(1.15);
-  color: #0000ff !important;
+  color: #0000ff;
   background: rgba(0, 0, 255, 0.1);
 }
 
-/* Badges customizados */
-.custom-badge {
-  background-color: #0000ff !important;
-  color: #ffffff !important;
-  font-size: 0.9rem !important;
-  padding: 0.5rem 1rem !important;
-  border-radius: 20px !important;
-  font-weight: 600 !important;
-  transition: all 0.3s ease;
-}
-
-.custom-badge:hover {
-  transform: scale(1.05);
-  background-color: #b983ff !important;
-}
-
-/* Formulário customizado */
+/* Formulário */
 .custom-input {
-  background-color: #1f1f3d !important;
-  border: 2px solid #0000ff !important;
-  color: #ffffff !important;
-  border-radius: 8px !important;
-  padding: 0.75rem 1rem !important;
+  background-color: #1f1f3d;
+  border: 2px solid #0000ff;
+  color: #fff;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
 }
 
 .custom-input:focus {
-  background-color: #1f1f3d !important;
-  border-color: #b983ff !important;
-  color: #ffffff !important;
-  box-shadow: 0 0 0 0.2rem rgba(185, 131, 255, 0.25) !important;
+  background-color: #1f1f3d;
+  border-color: #b983ff;
+  color: #fff;
+  box-shadow: 0 0 0 0.2rem rgba(185, 131, 255, 0.25);
 }
 
 .custom-input::placeholder {
-  color: #cccccc !important;
+  color: #ccc;
 }
 
 .custom-btn {
-  background-color: #0000ff !important;
-  border: none !important;
-  color: #ffffff !important;
-  padding: 0.75rem 2rem !important;
-  border-radius: 8px !important;
-  font-weight: 600 !important;
+  background-color: #0000ff;
+  border: none;
+  color: #fff;
+  padding: 0.75rem 2rem;
+  border-radius: 8px;
+  font-weight: 600;
   transition: all 0.3s ease;
 }
 
 .custom-btn:hover {
-  background-color: #b983ff !important;
+  background-color: #b983ff;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(185, 131, 255, 0.3);
 }
 
 /* Footer */
 .custom-footer {
-  background-color: #1a1a2e !important;
-  color: #ffffff !important;
+  background-color: #1a1a2e;
+  color: #fff;
   padding: 1.5rem 0;
   box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
   margin-top: auto;
 }
 
 .custom-footer p {
-  font-size: 0.9rem !important;
-  margin: 0 !important;
+  font-size: 0.9rem;
+  margin: 0;
 }
 
-/* Responsividade mantendo seu design */
+/* Responsivo */
 @media (max-width: 768px) {
   .custom-foto {
     width: 200px;
@@ -257,7 +273,7 @@ body {
   }
 
   .custom-title {
-    font-size: 2rem !important;
+    font-size: 2rem;
   }
 
   .custom-projeto-card {
@@ -272,7 +288,7 @@ body {
 
 @media (max-width: 500px) {
   .custom-brand {
-    font-size: 1.5rem !important;
+    font-size: 1.5rem;
   }
 
   .custom-section {
@@ -280,7 +296,7 @@ body {
   }
 
   .custom-title {
-    font-size: 1.8rem !important;
+    font-size: 1.8rem;
   }
 
   .custom-foto {
@@ -290,34 +306,16 @@ body {
   }
 
   .custom-card-title {
-    font-size: 1.4rem !important;
+    font-size: 1.4rem;
   }
 
   .custom-redes-sociais {
-    flex-direction: column !important;
-    gap: 15px !important;
+    flex-direction: column;
+    gap: 15px;
   }
 
   .custom-social-link {
     width: 45px;
     height: 45px;
   }
-}
-
-/* Ajustes para seções com scroll suave */
-section {
-  scroll-margin-top: 80px;
-}
-
-/* Sobrescrever estilos do Bootstrap que podem interferir */
-.navbar-toggler:focus {
-  box-shadow: none !important;
-}
-
-.navbar-toggler {
-  border: 1px solid #0000ff !important;
-}
-
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%230000ff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
 }
