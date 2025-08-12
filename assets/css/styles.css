@@ -234,9 +234,9 @@ a {
 
 /* Card de Contato */
 .card-contact {
-  background-color: #410287;
+  background-color: #828282;
   padding: 20px;
-  border-radius: 9px;
+  border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
@@ -245,7 +245,7 @@ a {
   gap: 15px;
   justify-content: center;
   align-items: center;
-  width: 450px;
+  width: 680px;
   box-sizing: border-box;
 }
 
@@ -280,30 +280,34 @@ a {
   background-color: #3333ff;
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
-  .custom-foto {
-    max-width: 200px;
-    width: 100%;
-    height: auto;
-    aspect-ratio: 1 / 1;
-    border-width: 3px;
-  }
-
-  .custom-title {
-    font-size: 2rem;
-  }
-
   .card-contact {
-    gap: 10px;
+    width: 100%;
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-contact {
+    flex-direction: column;
+    width: 100%;
     padding: 15px;
   }
+}
 
-  .custom-social-link {
-    width: 50px;
-    height: 50px;
-    font-size: 0.9rem;
-  }
+.custom-title {
+  font-size: 2rem;
+}
+
+.card-contact {
+  gap: 10px;
+  padding: 15px;
+}
+
+.custom-social-link {
+  width: 50px;
+  height: 50px;
+  font-size: 0.9rem;
 }
 
 @media (max-width: 500px) {
