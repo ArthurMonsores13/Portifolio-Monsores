@@ -105,7 +105,7 @@ a {
   z-index: 0;
 }
 
-.sobree > .container {
+.sobree .container {
   position: relative;
   z-index: 1;
   max-width: 1200px;
@@ -123,6 +123,7 @@ a {
   letter-spacing: 1px;
   margin-bottom: 2.5rem;
   text-align: center;
+  margin-top: 20px;
 }
 
 /* Descrição */
@@ -233,9 +234,9 @@ a {
 
 /* Card de Contato */
 .card-contact {
-  background-color: #1f1f3d;
+  background-color: #410287;
   padding: 20px;
-  border-radius: 12px;
+  border-radius: 9px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
@@ -244,13 +245,19 @@ a {
   gap: 15px;
   justify-content: center;
   align-items: center;
-  max-width: 100%;
+  width: 450px;
   box-sizing: border-box;
 }
 
 .card-contact:hover {
   transform: translateY(-10px);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+.container-cards {
+  display: flex;
+  justify-content: center; /* alinha no eixo horizontal */
+  align-items: center; /* alinha no eixo vertical */
+  padding: 40px;
 }
 
 .custom-social-link {
@@ -259,7 +266,7 @@ a {
   justify-content: center;
   width: 60px;
   height: 60px;
-  background-color: black
+  background-color: black;
   color: #fff;
   border-radius: 8px;
   text-decoration: none;
