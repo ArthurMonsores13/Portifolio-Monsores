@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const header = document.querySelector(".sticky-top");
 
-  // Função de throttle para limitar chamadas (ótima prática, mantida!)
+
   function throttle(func, limit) {
     let inThrottle;
     return function (...args) {
@@ -32,7 +32,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   navLinks.forEach((link) => {
     link.addEventListener("click", () => {
-      // Verifica se o menu está aberto (classe 'show' do Bootstrap)
       if (navbarCollapse?.classList.contains("show")) {
         const bsCollapse = window.bootstrap?.Collapse?.getInstance(navbarCollapse);
         bsCollapse?.hide();
