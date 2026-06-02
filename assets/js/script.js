@@ -1,41 +1,51 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const header = document.querySelector(".sticky-top");
+document.addEventListener('DOMContentLoaded', () => {
 
+  // ── Header scroll blur ──────────────────────────────────
+  const header = document.querySelector('.site-header');
 
-  function throttle(func, limit) {
-    let inThrottle;
-    return function (...args) {
-      if (!inThrottle) {
-        func.apply(this, args);
-        inThrottle = true;
-        setTimeout(() => (inThrottle = false), limit);
-      }
-    };
+  function updateHeader() {
+    header.classList.toggle('scrolled', window.scrollY > 60);
   }
 
-  function checkHeaderScroll() {
-    if (window.scrollY > 50) {
-      header.classList.add("scrolled");
-    } else {
-      header.classList.remove("scrolled");
+  let ticking = false;
+  window.addEventListener('scroll', () => {
+    if (!ticking) {
+      requestAnimationFrame(() => { updateHeader(); ticking = false; });
+      ticking = true;
     }
-  }
+  }, { passive: true });
 
-  // Adiciona o listener com throttle
-  window.addEventListener("scroll", throttle(checkHeaderScroll, 100));
-  checkHeaderScroll();
+  updateHeader();
 
+  // ── Close mobile menu on nav link click ────────────────
+  const navLinks       = document.querySelectorAll('a.nav-lnk');
+  const navbarCollapse = document.querySelector('.navbar-collapse');
 
-  // 2. Lógica para fechar o menu mobile ao clicar em um link
-  const navLinks = document.querySelectorAll("a.nav-link");
-  const navbarCollapse = document.querySelector(".navbar-collapse");
-
-  navLinks.forEach((link) => {
-    link.addEventListener("click", () => {
-      if (navbarCollapse?.classList.contains("show")) {
-        const bsCollapse = window.bootstrap?.Collapse?.getInstance(navbarCollapse);
-        bsCollapse?.hide();
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      if (navbarCollapse?.classList.contains('show')) {
+        window.bootstrap?.Collapse?.getInstance(navbarCollapse)?.hide();
       }
     });
   });
+
+  // ── IntersectionObserver — scroll reveal ───────────────
+  const reveals = document.querySelectorAll('.reveal');
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const el = entry.target;
+        const delay = parseFloat(el.style.getPropertyValue('--delay') || '0');
+        el.style.transitionDelay = `${delay}s`;
+        el.classList.add('visible');
+        observer.unobserve(el);
+      });
+    },
+    { threshold: 0.1, rootMargin: '0px 0px -48px 0px' }
+  );
+
+  reveals.forEach(el => observer.observe(el));
+
 });

@@ -4,352 +4,295 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Arthur Monsores | Software Developer</title>
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
   </head>
   <body>
-    <header class="sticky-top">
+
+    <!-- ── Header ── -->
+    <header class="site-header sticky-top">
       <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
-          <a class="navbar-brand custom-brand" href="#sobre">Portfólio Monsores</a>
+          <a class="navbar-brand nav-brand" href="#sobre">Arthur Monsores</a>
           <button
             class="navbar-toggler border-0"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
+            aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link custom-nav-link" href="#sobre">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link custom-nav-link" href="#projetos">Projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link custom-nav-link" href="#contato">Contact</a>
-              </li>
+            <ul class="navbar-nav ms-auto gap-1">
+              <li class="nav-item"><a class="nav-link nav-lnk" href="#sobre">Sobre</a></li>
+              <li class="nav-item"><a class="nav-link nav-lnk" href="#projetos">Projetos</a></li>
+              <li class="nav-item"><a class="nav-link nav-lnk" href="#contato">Contato</a></li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
 
-    <!-- Sobre -->
-    <section id="sobre" class="sobree">
+    <!-- ── Hero ── -->
+    <section id="sobre" class="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-grain" aria-hidden="true"></div>
+
+      <div class="particles" aria-hidden="true">
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+      </div>
+
+      <div class="container hero-content">
+        <div class="row align-items-center justify-content-between g-5">
+
+          <div class="col-lg-6 hero-text">
+            <p class="hero-eyebrow fade-up" style="--delay:0s">Software Developer</p>
+            <h1 class="hero-name fade-up" style="--delay:0.18s">Arthur<br>Monsores</h1>
+            <div class="hero-divider fade-up" style="--delay:0.34s"></div>
+            <p class="hero-areas fade-up" style="--delay:0.5s">
+              AI Agents &nbsp;&middot;&nbsp; Automação &nbsp;&middot;&nbsp; Business Intelligence
+            </p>
+            <a href="#projetos" class="btn-cta fade-up" style="--delay:0.66s">Ver Projetos ↓</a>
+          </div>
+
+          <div class="col-lg-5 text-center fade-up" style="--delay:0.28s">
+            <div class="hero-photo-wrap">
+              <div class="photo-ring-outer" aria-hidden="true"></div>
+              <img src="assets/images/foto.jpeg" alt="Arthur Monsores" class="hero-photo" />
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── About Me ── -->
+    <section id="sobre-mim" class="about-section">
       <div class="container">
-        <div class="row justify-content-center align-items-center">
-          <div class="col-lg-6 col-md-6 text-center text-lg-start">
-            <h2 class="custom-title">Arthur Monsores</h2>
-            <p class="custom-description">
-              Software Developer, undergraduate in Software Engineering at the
-              Universidade de Vassouras.
+        <div class="row align-items-center g-5">
+
+          <div class="col-lg-6">
+            <h2 class="section-title reveal">Sobre mim</h2>
+            <p class="about-text reveal" style="--delay:0.12s">
+              Sou Arthur Monsores, estudante de Engenharia de Software na Universidade de Vassouras.
+              Apaixonado por tecnologia e construção de soluções que fazem diferença.
+              Atualmente concentro meus estudos em agentes de IA, automações inteligentes e
+              Business Intelligence — explorando como sistemas autônomos podem transformar
+              fluxos de trabalho e gerar valor real com dados.
             </p>
           </div>
-          <div class="col-lg-6 col-md-6 text-center">
-            <img
-              class="custom-foto"
-              src="assets/images/foto.jpeg"
-              alt="Foto de Arthur Monsores"
-            />
+
+          <div class="col-lg-6">
+            <div class="areas-grid">
+              <div class="area-card reveal" style="--delay:0.08s">
+                <span class="area-icon">🤖</span>
+                <div>
+                  <h3 class="area-title">AI Agents</h3>
+                  <p class="area-desc">Agentes autônomos, LLMs e sistemas inteligentes</p>
+                </div>
+              </div>
+              <div class="area-card reveal" style="--delay:0.18s">
+                <span class="area-icon">⚙️</span>
+                <div>
+                  <h3 class="area-title">Automação</h3>
+                  <p class="area-desc">Pipelines, scripts e fluxos automatizados</p>
+                </div>
+              </div>
+              <div class="area-card reveal" style="--delay:0.28s">
+                <span class="area-icon">📊</span>
+                <div>
+                  <h3 class="area-title">Business Intelligence</h3>
+                  <p class="area-desc">SQL, PostgreSQL, Power BI e análise de dados</p>
+                </div>
+              </div>
+            </div>
           </div>
+
         </div>
       </div>
     </section>
 
-    <section id="descricao" class="description">
+    <!-- ── Main Projects ── -->
+    <section id="projetos" class="projects-section">
       <div class="container">
-        <div class="row justify-content-center align-items-center">
-          <div class="col-lg-6 col-md-6 text-center text-lg-start">
-            <div class="custom-title">About Me</div>
-            <p class="custom-description">
-              Hello! I'm Arthur Monsores, I love technology and creating new
-              things. I'm starting in this world with the goal of joining a big
-              company and helping to create new technologies and development.Currently, I am focusing my studies on C# and .NET, seeking to 
-              consolidate a solid foundation in programming logic, code organization, and best development practices. I am interested in understanding 
-              how applications work beyond the interface, exploring business rules, structure, and performance.
+        <h2 class="section-title reveal">Projetos Principais</h2>
+        <div class="projects-grid">
 
-            </p>
-          </div>
-          <div class="col-lg-6 col-md-6 text-center">
-            <img
-              class="custom-foto"
-              src="assets/images/selfie.jpg"
-              alt="Foto de Arthur Monsores"
-            />
-          </div>
+          <a href="https://github.com/ArthurMonsores13/Calculadora-em-CSharp"
+             target="_blank" class="proj-card reveal" style="--delay:0.06s">
+            <div class="proj-img-wrap">
+              <img src="assets/images/code.jpg" alt="Calculator C#" class="proj-img" />
+              <div class="proj-overlay">Student project built in C# focusing on logic and structure.</div>
+            </div>
+            <div class="proj-info">
+              <span class="proj-title">Calculator C#</span>
+              <span class="proj-tag">C# · .NET</span>
+            </div>
+          </a>
+
+          <a href="https://github.com/ArthurMonsores13/Dashboard_Investimentos"
+             target="_blank" class="proj-card reveal" style="--delay:0.12s">
+            <div class="proj-img-wrap">
+              <img src="assets/images/mesa.jpg" alt="Dashboard Investimentos" class="proj-img" />
+              <div class="proj-overlay">Investment dashboard on PostgreSQL analytical views consumed by Power BI.</div>
+            </div>
+            <div class="proj-info">
+              <span class="proj-title">Dashboard Investimentos</span>
+              <span class="proj-tag">PostgreSQL · Power BI</span>
+            </div>
+          </a>
+
+          <a href="https://github.com/ArthurMonsores13/Project-Flask-Festival"
+             target="_blank" class="proj-card reveal" style="--delay:0.18s">
+            <div class="proj-img-wrap">
+              <img src="assets/images/fun.jpg" alt="Flask Festival" class="proj-img" />
+              <div class="proj-overlay">Web app built with Flask showcasing routes, templates, and clean structure.</div>
+            </div>
+            <div class="proj-info">
+              <span class="proj-title">Flask Festival</span>
+              <span class="proj-tag">Python · Flask</span>
+            </div>
+          </a>
+
+          <a href="https://github.com/ArthurMonsores13/Documenta-o-SQL"
+             target="_blank" class="proj-card reveal" style="--delay:0.24s">
+            <div class="proj-img-wrap">
+              <img src="assets/images/s.jpg" alt="SQL Documentation" class="proj-img" />
+              <div class="proj-overlay">Complete study of SQL and PostgreSQL with practical examples.</div>
+            </div>
+            <div class="proj-info">
+              <span class="proj-title">SQL Documentation</span>
+              <span class="proj-tag">SQL · PostgreSQL</span>
+            </div>
+          </a>
+
         </div>
       </div>
     </section>
 
-<!-- Projetos -->
-<section id="projetos" class="projects">
-  <div class="container">
-    <h2 class="custom-title">Main Projects</h2>
-
-    <div class="row g-4 mb-4">
-
-      <!-- Calculator C# -->
-      <div class="col-lg-4 col-md-6">
-        <a
-          href="https://github.com/ArthurMonsores13/Calculadora-em-CSharp"
-          target="_blank"
-          class="custom-projeto-card"
-          title="Calculator C#"
-        >
-          <img
-            src="assets/images/calc.png"
-            alt="Calculator C#"
-            class="custom-projeto-img"
-          />
-          <div class="overlay-text">
-            Student project built in C# focusing on logic and structure.
-          </div>
-        </a>
-      </div>
-
-      <!-- Dashboard Investimentos -->
-      <div class="col-lg-4 col-md-6">
-        <a
-          href="https://github.com/ArthurMonsores13/Dashboard_Investimentos"
-          target="_blank"
-          class="custom-projeto-card"
-          title="Dashboard Investimentos"
-        >
-          <img
-            src="assets/images/dash.png"
-            alt="Dashboard Investimentos"
-            class="custom-projeto-img"
-          />
-          <div class="overlay-text">
-            Investment dashboard built on PostgreSQL analytical views and consumed by Power BI.
-          </div>
-        </a>
-      </div>
-
-      <!-- Flask Festival -->
-      <div class="col-lg-4 col-md-6">
-        <a
-          href="https://github.com/ArthurMonsores13/Project-Flask-Festival"
-          target="_blank"
-          class="custom-projeto-card"
-          title="Flask Festival"
-        >
-          <img
-            src="assets/images/image.png"
-            alt="Flask Festival"
-            class="custom-projeto-img"
-          />
-          <div class="overlay-text">
-            Web app built with Flask showcasing routes, templates, and clean structure.
-          </div>
-        </a>
-      </div>
-
-      <!-- SQL Documentation -->
-      <div class="col-lg-4 col-md-6">
-        <a
-          href="https://github.com/ArthurMonsores13/Documenta-o-SQL"
-          target="_blank"
-          class="custom-projeto-card"
-          title="SQL Documentation"
-        >
-          <img
-            src="assets/images/foto_doc.jpeg"
-            alt="SQL Documentation"
-            class="custom-projeto-img"
-          />
-          <div class="overlay-text">
-            Complete study of SQL and PostgreSQL with practical examples.
-          </div>
-        </a>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-<!-- Other Projects -->
-<section id="outros-projetos" class="projects">
-  <div class="container">
-
-    <h2 class="custom-title mt-4">Other Projects</h2>
-
-    <div class="row g-4">
-
-      <!-- Solo Leveling -->
-      <div class="col-lg-4 col-md-6">
-        <a
-          href="https://arthurmonsores13.github.io/SoloLeveling/"
-          target="_blank"
-          class="custom-projeto-card"
-          title="Design anime - Solo Leveling"
-        >
-          <img
-            src="assets/images/leveling.jpg"
-            alt="Design anime Solo Leveling"
-            class="custom-projeto-img"
-          />
-          <div class="overlay-text">
-            Interactive anime-themed page showcasing layout design, UI structure, and visual styling.
-          </div>
-        </a>
-      </div>
-
-      <!-- Arctic Monkeys -->
-      <div class="col-lg-4 col-md-6">
-        <a
-          href="https://arthurmonsores13.github.io/Site-Banda/"
-          target="_blank"
-          class="custom-projeto-card"
-          title="Arctic Monkey Website"
-        >
-          <img
-            src="assets/images/banda.jpg"
-            alt="Arctic Monkey Website"
-            class="custom-projeto-img"
-          />
-          <div class="overlay-text">
-            Responsive band website featuring albums, members, and media with a clean UI.
-          </div>
-        </a>
-      </div>
-
-      <!-- Medical clinic -->
-      <div class="col-lg-4 col-md-6">
-        <a
-          href="https://arthurmonsores13.github.io/Praticas-Extensionistas-Site/"
-          target="_blank"
-          class="custom-projeto-card"
-          title="Medical clinic"
-        >
-          <img
-            src="assets/images/clinic.jpg"
-            alt="Medical clinic"
-            class="custom-projeto-img"
-          />
-          <div class="overlay-text">
-            Informational website for a medical clinic with services and scheduling sections.
-          </div>
-        </a>
-      </div>
-
-      <!-- Conversor -->
-      <div class="col-lg-4 col-md-6">
-        <a
-          href="https://arthurmonsores13.github.io/Conversor/"
-          target="_blank"
-          class="custom-projeto-card"
-          title="Conversor"
-        >
-          <img
-            src="assets/images/conversor.jpg"
-            alt="Conversor"
-            class="custom-projeto-img"
-          />
-          <div class="overlay-text">
-            Simple and functional unit converter built with HTML, CSS, and JavaScript.
-          </div>
-        </a>
-      </div>
-
-      <!-- Flappy Bird -->
-      <div class="col-lg-4 col-md-6">
-        <a
-          href="https://github.com/ArthurMonsores13/Flappy-Bird-Game-Java"
-          target="_blank"
-          class="custom-projeto-card"
-          title="Flappy Bird Game Java"
-        >
-          <img
-            src="assets/images/flappy.jpg"
-            alt="Flappy Bird"
-            class="custom-projeto-img"
-          />
-          <div class="overlay-text">
-            Java-based game inspired by Flappy Bird with collision logic and responsive controls.
-          </div>
-        </a>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-
-    <!-- Contato -->
-    <section id="contato">
-      <h2 class="custom-title">Contact</h2>
-      <div class="container-cards">
-        <div class="card-contact">
-          <p>Instagram:</p>
-          <a
-            href="https://www.instagram.com/monsoresarthur/?hl=en"
-            target="_blank"
-            class="custom-social-link"
-            title="Instagram"
-            aria-label="Instagram"
-          >
-            <i class="bi bi-instagram fs-2"></i>
-          </a>
-
-          <p>LinkedIn:</p>
-          <a
-            href="https://www.linkedin.com/in/arthur-monsores-5883061a1/"
-            target="_blank"
-            class="custom-social-link"
-            title="LinkedIn"
-            aria-label="LinkedIn"
-          >
-            <i class="bi bi-linkedin fs-2"></i>
-          </a>
-
-          <p>GitHub:</p>
-          <a
-            href="https://github.com/ArthurMonsores13"
-            target="_blank"
-            class="custom-social-link"
-            title="GitHub"
-            aria-label="GitHub"
-          >
-            <i class="bi bi-github fs-2"></i>
-          </a>
-
-          <p>Currículo:</p>
-          <a
-            href="assets/css/curriculoAMs.pdf"
-            target="_blank"
-            class="custom-social-link"
-            title="Meu Currículo"
-            aria-label="Meu Currículo"
-          >
-            <i class="bi bi-file-earmark-person fs-2"></i>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <footer class="custom-footer text-center">
+    <!-- ── Other Projects ── -->
+    <section id="outros-projetos" class="projects-section projects-section--alt">
       <div class="container">
-        <p class="mb-0">
-          &copy; 2024 Arthur Monsores.
-        </p>
+        <h2 class="section-title reveal">Outros Projetos</h2>
+        <div class="projects-grid projects-grid--other">
+
+          <a href="https://arthurmonsores13.github.io/SoloLeveling/"
+             target="_blank" class="proj-card reveal" style="--delay:0.06s">
+            <div class="proj-img-wrap">
+              <img src="assets/images/leveling.jpg" alt="Solo Leveling" class="proj-img" />
+              <div class="proj-overlay">Interactive anime-themed page with layout design and visual styling.</div>
+            </div>
+            <div class="proj-info">
+              <span class="proj-title">Solo Leveling</span>
+              <span class="proj-tag">HTML · CSS · JS</span>
+            </div>
+          </a>
+
+          <a href="https://arthurmonsores13.github.io/Site-Banda/"
+             target="_blank" class="proj-card reveal" style="--delay:0.12s">
+            <div class="proj-img-wrap">
+              <img src="assets/images/banda.jpg" alt="Arctic Monkeys" class="proj-img" />
+              <div class="proj-overlay">Responsive band website with albums, members, and clean UI.</div>
+            </div>
+            <div class="proj-info">
+              <span class="proj-title">Arctic Monkeys</span>
+              <span class="proj-tag">HTML · CSS · JS</span>
+            </div>
+          </a>
+
+          <a href="https://arthurmonsores13.github.io/Praticas-Extensionistas-Site/"
+             target="_blank" class="proj-card reveal" style="--delay:0.18s">
+            <div class="proj-img-wrap">
+              <img src="assets/images/clinic.jpg" alt="Medical Clinic" class="proj-img" />
+              <div class="proj-overlay">Informational website for a medical clinic with services and scheduling.</div>
+            </div>
+            <div class="proj-info">
+              <span class="proj-title">Medical Clinic</span>
+              <span class="proj-tag">HTML · CSS · JS</span>
+            </div>
+          </a>
+
+          <a href="https://arthurmonsores13.github.io/Conversor/"
+             target="_blank" class="proj-card reveal" style="--delay:0.24s">
+            <div class="proj-img-wrap">
+              <img src="assets/images/a.jpg" alt="Conversor" class="proj-img" />
+              <div class="proj-overlay">Simple and functional unit converter built with HTML, CSS, and JavaScript.</div>
+            </div>
+            <div class="proj-info">
+              <span class="proj-title">Conversor</span>
+              <span class="proj-tag">HTML · CSS · JS</span>
+            </div>
+          </a>
+
+          <a href="https://github.com/ArthurMonsores13/Flappy-Bird-Game-Java"
+             target="_blank" class="proj-card reveal" style="--delay:0.3s">
+            <div class="proj-img-wrap">
+              <img src="assets/images/funn.jpg" alt="Flappy Bird Java" class="proj-img" />
+              <div class="proj-overlay">Java-based game inspired by Flappy Bird with collision logic and controls.</div>
+            </div>
+            <div class="proj-info">
+              <span class="proj-title">Flappy Bird</span>
+              <span class="proj-tag">Java</span>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Contact ── -->
+    <section id="contato" class="contact-section">
+      <div class="container d-flex justify-content-center">
+        <div class="contact-card reveal">
+          <h2 class="section-title">Vamos conversar?</h2>
+          <p class="contact-sub">Disponível para oportunidades, colaborações e projetos.</p>
+          <div class="social-row">
+            <a href="https://www.instagram.com/monsoresarthur/?hl=en"
+               target="_blank" class="social-btn" aria-label="Instagram" title="Instagram">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/arthur-monsores-5883061a1/"
+               target="_blank" class="social-btn" aria-label="LinkedIn" title="LinkedIn">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="https://github.com/ArthurMonsores13"
+               target="_blank" class="social-btn" aria-label="GitHub" title="GitHub">
+              <i class="bi bi-github"></i>
+            </a>
+            <a href="assets/css/curriculoAMs.pdf"
+               target="_blank" class="social-btn" aria-label="Currículo" title="Currículo">
+              <i class="bi bi-file-earmark-person"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Footer ── -->
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; 2026 Arthur Monsores</p>
       </div>
     </footer>
 
