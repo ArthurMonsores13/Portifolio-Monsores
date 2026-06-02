@@ -41,6 +41,8 @@ document.addEventListener('DOMContentLoaded', () => {
         el.style.transitionDelay = `${delay}s`;
         el.classList.add('visible');
         observer.unobserve(el);
+        // release GPU hint after animation completes
+        setTimeout(() => { el.style.willChange = 'auto'; }, 700 + delay * 1000);
       });
     },
     { threshold: 0.1, rootMargin: '0px 0px -48px 0px' }
