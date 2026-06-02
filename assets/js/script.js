@@ -38,14 +38,17 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!entry.isIntersecting) return;
         const el = entry.target;
         const delay = parseFloat(el.style.getPropertyValue('--delay') || '0');
+        // promote to GPU layer right before animating
+        el.style.willChange = 'opacity, transform';
         el.style.transitionDelay = `${delay}s`;
         el.classList.add('visible');
         observer.unobserve(el);
         // release GPU hint after animation completes
-        setTimeout(() => { el.style.willChange = 'auto'; }, 700 + delay * 1000);
+        setTimeout(() => { el.style.willChange = 'auto'; }, 750 + delay * 1000);
       });
     },
-    { threshold: 0.1, rootMargin: '0px 0px -48px 0px' }
+    // positive rootMargin triggers elements 60px BEFORE they enter viewport
+    { threshold: 0.05, rootMargin: '0px 0px 60px 0px' }
   );
 
   reveals.forEach(el => observer.observe(el));

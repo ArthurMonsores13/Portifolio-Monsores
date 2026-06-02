@@ -311,10 +311,9 @@ img { display: block; max-width: 100%; }
 .reveal {
   opacity: 0;
   transform: translateY(26px);
-  /* delay applied by JS via el.style.transitionDelay */
+  /* delay and will-change applied by JS just before reveal */
   transition: opacity  0.7s cubic-bezier(0.22, 1, 0.36, 1),
               transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
-  will-change: opacity, transform;
 }
 .reveal.visible {
   opacity: 1;
