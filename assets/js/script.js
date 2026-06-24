@@ -105,6 +105,9 @@ document.addEventListener('DOMContentLoaded', () => {
         mx = (e.clientX - r.left) / r.width  - 0.5;
         my = (e.clientY - r.top)  / r.height - 0.5;
         card.classList.add('tilting');
+        // spotlight glow follows cursor
+        card.style.setProperty('--mx', `${((mx + 0.5) * 100).toFixed(1)}%`);
+        card.style.setProperty('--my', `${((my + 0.5) * 100).toFixed(1)}%`);
         if (!raf) raf = requestAnimationFrame(() => {
           card.style.transform =
             `perspective(900px) rotateX(${(-my * MAX).toFixed(2)}deg) ` +
@@ -120,17 +123,21 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
 
-    // ── Magnetic pull on hero buttons ──
-    document.querySelectorAll('.hero-actions a').forEach(btn => {
-      btn.addEventListener('pointermove', (e) => {
-        if (e.pointerType === 'touch') return;
-        const r = btn.getBoundingClientRect();
-        const x = (e.clientX - r.left - r.width / 2) * 0.25;
-        const y = (e.clientY - r.top - r.height / 2) * 0.35;
-        btn.style.transform = `translate(${x.toFixed(1)}px, ${(y - 3).toFixed(1)}px)`;
+    // ── Magnetic pull on hero buttons + social icons ──
+    const magnetize = (els, strength, lift) => {
+      els.forEach(btn => {
+        btn.addEventListener('pointermove', (e) => {
+          if (e.pointerType === 'touch') return;
+          const r = btn.getBoundingClientRect();
+          const x = (e.clientX - r.left - r.width / 2) * strength;
+          const y = (e.clientY - r.top - r.height / 2) * strength;
+          btn.style.transform = `translate(${x.toFixed(1)}px, ${(y + lift).toFixed(1)}px)`;
+        });
+        btn.addEventListener('pointerleave', () => { btn.style.transform = ''; });
       });
-      btn.addEventListener('pointerleave', () => { btn.style.transform = ''; });
-    });
+    };
+    magnetize(document.querySelectorAll('.hero-actions a'), 0.3, -3);
+    magnetize(document.querySelectorAll('.social-btn'), 0.25, -4);
   }
 
 });

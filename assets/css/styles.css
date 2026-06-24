@@ -338,6 +338,10 @@ img { display: block; max-width: 100%; }
 }
 .btn-cta:active { transform: translateY(-1px); }
 
+.btn-cta i, .btn-ghost i { transition: transform 0.25s var(--ease); }
+.btn-cta:hover i  { transform: translateY(3px); }
+.btn-ghost:hover i { transform: translateX(3px); }
+
 .btn-ghost {
   display: inline-flex;
   align-items: center;
@@ -391,7 +395,12 @@ img { display: block; max-width: 100%; }
   position: relative;
   z-index: 1;
   box-shadow: var(--sh-3);
-  transform: translateZ(0);
+  will-change: transform;
+  animation: floatY 6s ease-in-out infinite;
+}
+@keyframes floatY {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-12px); }
 }
 
 /* ═══════════════════════════════════════════
@@ -423,7 +432,9 @@ img { display: block; max-width: 100%; }
 .section-head { margin-bottom: var(--s-7); }
 
 .section-eyebrow {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
   font-size: 0.74rem;
   font-weight: 600;
   letter-spacing: 3.5px;
@@ -431,6 +442,17 @@ img { display: block; max-width: 100%; }
   color: var(--accent);
   margin-bottom: var(--s-3);
 }
+.section-eyebrow::before {
+  content: '';
+  width: 26px;
+  height: 1px;
+  background: var(--grad-accent);
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: transform 0.6s var(--ease) 0.15s;
+}
+.reveal.visible .section-eyebrow::before,
+.section-head.visible .section-eyebrow::before { transform: scaleX(1); }
 
 .section-title {
   position: relative;
@@ -556,6 +578,22 @@ img { display: block; max-width: 100%; }
 }
 
 .proj-img-wrap { position: relative; overflow: hidden; }
+
+/* Cursor spotlight glow (coords fed by JS via --mx/--my) */
+.proj-card { --mx: 50%; --my: 50%; }
+.proj-img-wrap::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  background: radial-gradient(circle 160px at var(--mx) var(--my),
+    rgba(56, 189, 248, 0.22), transparent 62%);
+  opacity: 0;
+  mix-blend-mode: screen;
+  transition: opacity 0.35s var(--ease);
+}
+.proj-card:hover .proj-img-wrap::after { opacity: 1; }
 
 .proj-img {
   width: 100%;
