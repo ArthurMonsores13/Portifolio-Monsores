@@ -1,0 +1,163 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - navigation [ref=e3]:
+      - generic [ref=e4]:
+        - link "Arthur Monsores" [ref=e5] [cursor=pointer]:
+          - /url: "#sobre"
+        - list [ref=e7]:
+          - listitem [ref=e8]:
+            - link "Sobre" [ref=e9] [cursor=pointer]:
+              - /url: "#sobre"
+          - listitem [ref=e10]:
+            - link "Projetos" [ref=e11] [cursor=pointer]:
+              - /url: "#projetos"
+          - listitem [ref=e12]:
+            - link "Contato" [ref=e13] [cursor=pointer]:
+              - /url: "#contato"
+  - generic [ref=e17]:
+    - generic [ref=e18]:
+      - paragraph [ref=e19]: Software Developer
+      - heading "Arthur Monsores" [level=1] [ref=e20]:
+        - text: Arthur
+        - text: Monsores
+      - paragraph [ref=e22]: AI Agents · Automação · Business Intelligence
+      - generic [ref=e23]:
+        - link "Ver Projetos " [ref=e24] [cursor=pointer]:
+          - /url: "#projetos"
+          - text: Ver Projetos
+          - generic [ref=e25]: 
+        - link "Contato " [ref=e26] [cursor=pointer]:
+          - /url: "#contato"
+          - text: Contato
+          - generic [ref=e27]: 
+    - img "Arthur Monsores" [ref=e31]
+  - generic [ref=e34]:
+    - generic [ref=e35]:
+      - generic [ref=e36]:
+        - generic [ref=e37]: Quem sou
+        - heading "Sobre mim" [level=2] [ref=e38]
+      - paragraph [ref=e39]: Sou Arthur Monsores, estudante de Engenharia de Software na Universidade de Vassouras. Apaixonado por tecnologia e construção de soluções que fazem diferença. Atualmente concentro meus estudos em agentes de IA, automações inteligentes e Business Intelligence — explorando como sistemas autônomos podem transformar fluxos de trabalho e gerar valor real com dados.
+    - generic [ref=e41]:
+      - generic [ref=e42]:
+        - generic [ref=e44]: 
+        - generic [ref=e45]:
+          - heading "AI Agents" [level=3] [ref=e46]
+          - paragraph [ref=e47]: Agentes autônomos, LLMs e sistemas inteligentes
+      - generic [ref=e48]:
+        - generic [ref=e50]: 
+        - generic [ref=e51]:
+          - heading "Automação" [level=3] [ref=e52]
+          - paragraph [ref=e53]: Pipelines, scripts e fluxos automatizados
+      - generic [ref=e54]:
+        - generic [ref=e56]: 
+        - generic [ref=e57]:
+          - heading "Business Intelligence" [level=3] [ref=e58]
+          - paragraph [ref=e59]: SQL, PostgreSQL, Power BI e análise de dados
+  - generic [ref=e61]:
+    - generic [ref=e62]:
+      - generic [ref=e63]: Portfólio
+      - heading "Projetos Principais" [level=2] [ref=e64]
+    - generic [ref=e65]:
+      - link "BillTracker Automation Sistema de monitoramento de contas a pagar com alertas via Telegram. n8n + Google Sheets + JavaScript em produção no VPS. BillTracker Automation n8n · Sheets · Telegram" [ref=e66] [cursor=pointer]:
+        - /url: https://github.com/ArthurMonsores13/BillTracker
+        - generic [ref=e67]:
+          - img "BillTracker Automation" [ref=e68]
+          - generic [ref=e69]: Sistema de monitoramento de contas a pagar com alertas via Telegram. n8n + Google Sheets + JavaScript em produção no VPS.
+        - generic [ref=e70]:
+          - generic [ref=e71]: BillTracker Automation
+          - generic [ref=e72]: n8n · Sheets · Telegram
+      - link "Dashboard Investimentos Investment dashboard on PostgreSQL analytical views consumed by Power BI. Dashboard Investimentos PostgreSQL · Power BI" [ref=e73] [cursor=pointer]:
+        - /url: https://github.com/ArthurMonsores13/Dashboard_Investimentos
+        - generic [ref=e74]:
+          - img "Dashboard Investimentos" [ref=e75]
+          - generic [ref=e76]: Investment dashboard on PostgreSQL analytical views consumed by Power BI.
+        - generic [ref=e77]:
+          - generic [ref=e78]: Dashboard Investimentos
+          - generic [ref=e79]: PostgreSQL · Power BI
+      - link "Flask Festival Web app built with Flask showcasing routes, templates, and clean structure. Flask Festival Python · Flask" [ref=e80] [cursor=pointer]:
+        - /url: https://github.com/ArthurMonsores13/Project-Flask-Festival
+        - generic [ref=e81]:
+          - img "Flask Festival" [ref=e82]
+          - generic [ref=e83]: Web app built with Flask showcasing routes, templates, and clean structure.
+        - generic [ref=e84]:
+          - generic [ref=e85]: Flask Festival
+          - generic [ref=e86]: Python · Flask
+      - link "SQL Documentation Complete study of SQL and PostgreSQL with practical examples. SQL Documentation SQL · PostgreSQL" [ref=e87] [cursor=pointer]:
+        - /url: https://github.com/ArthurMonsores13/Documenta-o-SQL
+        - generic [ref=e88]:
+          - img "SQL Documentation" [ref=e89]
+          - generic [ref=e90]: Complete study of SQL and PostgreSQL with practical examples.
+        - generic [ref=e91]:
+          - generic [ref=e92]: SQL Documentation
+          - generic [ref=e93]: SQL · PostgreSQL
+  - generic [ref=e95]:
+    - generic [ref=e96]:
+      - generic [ref=e97]: Mais trabalhos
+      - heading "Outros Projetos" [level=2] [ref=e98]
+    - generic [ref=e99]:
+      - link "Solo Leveling Interactive anime-themed page with layout design and visual styling. Solo Leveling HTML · CSS · JS" [ref=e100] [cursor=pointer]:
+        - /url: https://arthurmonsores13.github.io/SoloLeveling/
+        - generic [ref=e101]:
+          - img "Solo Leveling" [ref=e102]
+          - generic [ref=e103]: Interactive anime-themed page with layout design and visual styling.
+        - generic [ref=e104]:
+          - generic [ref=e105]: Solo Leveling
+          - generic [ref=e106]: HTML · CSS · JS
+      - link "Arctic Monkeys Responsive band website with albums, members, and clean UI. Arctic Monkeys HTML · CSS · JS" [ref=e107] [cursor=pointer]:
+        - /url: https://arthurmonsores13.github.io/Site-Banda/
+        - generic [ref=e108]:
+          - img "Arctic Monkeys" [ref=e109]
+          - generic [ref=e110]: Responsive band website with albums, members, and clean UI.
+        - generic [ref=e111]:
+          - generic [ref=e112]: Arctic Monkeys
+          - generic [ref=e113]: HTML · CSS · JS
+      - link "Medical Clinic Informational website for a medical clinic with services and scheduling. Medical Clinic HTML · CSS · JS" [ref=e114] [cursor=pointer]:
+        - /url: https://clinica-idososs.vercel.app/
+        - generic [ref=e115]:
+          - img "Medical Clinic" [ref=e116]
+          - generic [ref=e117]: Informational website for a medical clinic with services and scheduling.
+        - generic [ref=e118]:
+          - generic [ref=e119]: Medical Clinic
+          - generic [ref=e120]: HTML · CSS · JS
+      - link "Conversor Simple and functional unit converter built with HTML, CSS, and JavaScript. Conversor HTML · CSS · JS" [ref=e121] [cursor=pointer]:
+        - /url: https://arthurmonsores13.github.io/Conversor/
+        - generic [ref=e122]:
+          - img "Conversor" [ref=e123]
+          - generic [ref=e124]: Simple and functional unit converter built with HTML, CSS, and JavaScript.
+        - generic [ref=e125]:
+          - generic [ref=e126]: Conversor
+          - generic [ref=e127]: HTML · CSS · JS
+      - link "Calculator C# Student project built in C# focusing on logic and structure. Calculator C# C# · .NET" [ref=e128] [cursor=pointer]:
+        - /url: https://github.com/ArthurMonsores13/Calculadora-em-CSharp
+        - generic [ref=e129]:
+          - img "Calculator C#" [ref=e130]
+          - generic [ref=e131]: Student project built in C# focusing on logic and structure.
+        - generic [ref=e132]:
+          - generic [ref=e133]: Calculator C#
+          - generic [ref=e134]: C# · .NET
+      - link "Flappy Bird Java Java-based game inspired by Flappy Bird with collision logic and controls. Flappy Bird Java" [ref=e135] [cursor=pointer]:
+        - /url: https://github.com/ArthurMonsores13/Flappy-Bird-Game-Java
+        - generic [ref=e136]:
+          - img "Flappy Bird Java" [ref=e137]
+          - generic [ref=e138]: Java-based game inspired by Flappy Bird with collision logic and controls.
+        - generic [ref=e139]:
+          - generic [ref=e140]: Flappy Bird
+          - generic [ref=e141]: Java
+  - generic [ref=e144]:
+    - heading "Vamos conversar?" [level=2] [ref=e145]
+    - paragraph [ref=e146]: Disponível para oportunidades, colaborações e projetos.
+    - generic [ref=e147]:
+      - link "Instagram" [ref=e148] [cursor=pointer]:
+        - /url: https://www.instagram.com/monsoresarthur/?hl=en
+        - generic [ref=e149]: 
+      - link "LinkedIn" [ref=e150] [cursor=pointer]:
+        - /url: https://www.linkedin.com/in/arthur-monsores-5883061a1/
+        - generic [ref=e151]: 
+      - link "GitHub" [ref=e152] [cursor=pointer]:
+        - /url: https://github.com/ArthurMonsores13
+        - generic [ref=e153]: 
+      - link "Currículo" [ref=e154] [cursor=pointer]:
+        - /url: assets/css/curriculo_atual.pdf
+        - generic [ref=e155]: 
+  - contentinfo [ref=e156]:
+    - paragraph [ref=e158]: © 2026 Arthur Monsores
